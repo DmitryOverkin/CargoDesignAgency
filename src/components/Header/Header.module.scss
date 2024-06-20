@@ -1,0 +1,46 @@
+.header {
+  padding: 20px 50px;
+
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      clip-path: polygon(0 0, 0 0, 100% 100%, 100% 25%, 75% 0);
+      border-radius: 50px;
+      rotate: 45deg;
+    }
+  }
+
+  .nav {
+    color: #585962;
+    .list {
+      display: flex;
+      gap: 16px;
+      .listItem {
+        transition: 0.3s ease-in-out;
+      }
+      .active{
+        transform: scale(1.15);
+        color: #fff;
+      }
+    }
+  }
+  .headerBtns {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    .headerFAQLink {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.mainButton{
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    width: 140px;
+    height: 40px;
+    background-color: #276df1;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        background-color: #164292;
+    }
+}
