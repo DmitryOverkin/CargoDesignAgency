@@ -4,17 +4,7 @@ import NavLink from "../NavLink/NavLink";
 import { useState } from "react";
 
 export default function Header() {
-  const [isActive, setIsActive] = useState("");
-
-  //   function changeActiveLink(linkName) {
-  //     if(linkName = 'works'){
-  //       setIsActive('works')
-  //     }else if(linkName = 'products'){
-  //       setIsActive('products')
-  //     }else{
-  //       setIsActive('services')
-  //   }
-  // }
+  const [activeLink, setActiveLink] = useState("works");
 
   return (
     <header className={styles.header}>
@@ -23,9 +13,24 @@ export default function Header() {
 
         <nav className={styles.nav}>
           <ul className={styles.list}>
-            <NavLink>Products</NavLink>
-            <NavLink>Our Works</NavLink>
-            <NavLink>Services</NavLink>
+            <NavLink
+              onChange={() => setActiveLink("products")}
+              isActive={activeLink === "products"}
+            >
+              Products
+            </NavLink>
+            <NavLink
+              onChange={() => setActiveLink("works")}
+              isActive={activeLink === "works"}
+            >
+              Our Works
+            </NavLink>
+            <NavLink
+              onChange={() => setActiveLink("services")}
+              isActive={activeLink === "services"}
+            >
+              Services
+            </NavLink>
           </ul>
         </nav>
 
