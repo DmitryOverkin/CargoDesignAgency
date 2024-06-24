@@ -1,0 +1,28 @@
+.startText {
+
+    padding: 50px 0;
+
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 30px;
+    
+
+    .content {
+        text-align: center;
+        margin: 0 auto;
+
+      .title {
+        font-size: 60px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+      .subTitle {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

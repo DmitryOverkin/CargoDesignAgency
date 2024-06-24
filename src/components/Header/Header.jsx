@@ -40,7 +40,7 @@ export default function Header() {
               FAQ
             </a>
           </span>
-          <Button>Get started</Button>
+          <Button>Get Started</Button>
         </div>
       </div>
     </header>
